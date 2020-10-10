@@ -5,8 +5,8 @@ import processing.core.PApplet;
 public class Square extends Figure{
 
 	
-	public Square(int posX, int posY, int tamX, int tamY, int dir, PApplet app) {
-		super(posX, posY, tamX, tamY, dir, app);
+	public Square(int posX, int posY, int tam, int dir,float r, float g, float b, PApplet app) {
+		super(posX, posY, tam, dir,r,g,b, app);
 		
 		
 		// TODO Auto-generated constructor stub
@@ -17,11 +17,12 @@ public class Square extends Figure{
 		super.checkArray();
 	}
 	
-	void paintWithTxt() {
-		
+	public void paintWithTxt() {
+		//app.ellipse(50,50,50,50);
+		super.paintWithTxt();
 	}
 	
-	void move(){
+	public void move(){
 		
 	}
 	
@@ -35,7 +36,10 @@ public class Square extends Figure{
 	
 	
 	
-	void paintWithClick() {
+	 public void paintWithClick() {
+		app.fill(this.r,this.g, this.b);
+		app.rect(this.posX, this.posY, this.tam,this.tam);
+		
 		
 	}
 

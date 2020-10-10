@@ -4,8 +4,9 @@ import processing.core.PApplet;
 
  public class Figure extends PApplet {
 	int posX, posY;
-	int tamX, tamY;
+	int tam;
 	int dir;
+	float r,g,b;
 	PApplet app;
 	static String [] atributes;
 	String one,two,three,four,five,six,seven;
@@ -22,14 +23,14 @@ import processing.core.PApplet;
 	
 	
 	
-	public Figure(int posX, int posY, int tamX, int tamY, int dir, PApplet app){
+	public Figure(int posX, int posY, int tam, int dir,float r, float g, float b, PApplet app){
 		this.posX=posX;
 		this.posY=posY;
-		this.tamX=tamX;
-		this.tamY=tamY;
+		this.tam=tam;
 		this.dir=dir;
 		this.app=app;
-		atributes= app.loadStrings("QuizAtributes.txt");
+		//atributes= app.loadStrings("QuizAtributes.txt");
+		
 		
 	}
 	
@@ -43,7 +44,6 @@ import processing.core.PApplet;
 		five=atributes[4];
 		six=atributes[5];
 		seven=atributes[6];
-		}
 		
 		oneL= one.split(" ");
 		twoL= two.split(" ");
@@ -52,11 +52,14 @@ import processing.core.PApplet;
 		fiveL= five.split(" ");
 		sixL= six.split(" ");
 		sevenL= seven.split(" ");
+		
+		}
+		
 	}
 	
 	
 	
-	void move(){
+	public void move(){
 		
 	}
 	
@@ -65,10 +68,24 @@ import processing.core.PApplet;
 	}
 	
 	void stopMove() {
-		
+		if(PApplet.dist(this.posX, this.posY, app.mouseX,app.mouseY )<= this.tam) {
+			this.dir*=0;
+		}
 	}
 	
 	void paintWithTxt() {
+		System.out.println();
+		/*String s= "cuadrado";
+		
+		
+			if(oneL[0]==s) {
+				float x=Float.parseFloat(oneL[2]);
+				float y=Float.parseFloat(oneL[3]);
+				float w=Float.parseFloat(oneL[1]);
+				app.rect( x , y, w,w);
+			}*/
+		
+		//app.rect(50, 50, 50, 50);
 		
 	}
 	
@@ -100,23 +117,13 @@ import processing.core.PApplet;
 	}
 
 
-	public int getTamX() {
-		return tamX;
+	public int getTam() {
+		return tam;
 	}
 
 
-	public void setTamX(int tamX) {
-		this.tamX = tamX;
-	}
-
-
-	public int getTamY() {
-		return tamY;
-	}
-
-
-	public void setTamY(int tamY) {
-		this.tamY = tamY;
+	public void setTam(int tam) {
+		this.tam = tam;
 	}
 
 

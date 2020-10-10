@@ -4,10 +4,10 @@ import processing.core.PApplet;
 
 public class Circle extends Figure{
 	String [] atributes;
-	Circle(int posX, int posY, int tamX, int tamY, int dir,PApplet app) {
-		super(posX, posY, tamX, tamY, dir,  app);
+	public Circle(int posX, int posY, int tam, int dir,float r, float g, float b,PApplet app) {
+		super(posX, posY, tam, dir,r,g,b,  app);
 		// TODO Auto-generated constructor stub
-		atributes= app.loadStrings("QuizAtributes.txt");
+		//atributes= app.loadStrings("QuizAtributes.txt");
 	}
 	
 	public void checkArray() {
@@ -15,10 +15,10 @@ public class Circle extends Figure{
 	}
 
 	void paintWithTxt() {
-		
+		//app.ellipse(150, 150, 150, 150);
 	}
 	
-	void move(){
+	public void move(){
 		
 	}
 	
@@ -32,7 +32,9 @@ public class Circle extends Figure{
 	
 	
 	
-	void paintWithClick() {
+	public void paintWithClick() {
+		app.fill(this.r,this.g, this.b);
+		app.ellipse(this.posX, this.posY, this.tam, this.tam);
 		
 	}
 
