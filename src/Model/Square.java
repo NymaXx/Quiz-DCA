@@ -18,7 +18,7 @@ public class Square extends Figure{
 	}
 	
 	public void paintWithTxt() {
-		super.paintWithTxt();
+		//super.paintWithTxt();
 	}
 	
 	public void move(){

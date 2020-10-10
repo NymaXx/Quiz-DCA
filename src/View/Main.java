@@ -30,7 +30,7 @@ public class Main extends PApplet {
 		background(0);
 		canvas.basicPaint();
 		fig.checkArray();
-		fig.paintWithTxt();
+        fig.paintWithTxt();
 		
 		
 		

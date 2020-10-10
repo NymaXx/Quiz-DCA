@@ -56,6 +56,8 @@ import processing.core.PApplet;
 		sixL= six.split(" ");
 		sevenL= seven.split(" ");
 		
+		
+		
 	}
 		}
 		
@@ -64,8 +66,13 @@ import processing.core.PApplet;
 	
 	
 	public void paintWithTxt() {
+		
+		for(int e=0; e<oneL.length; e++) {
+			System.out.println(oneL[0]);
+			//if(oneL[0])
+		}
 		//for(int i=0; i< oneL.length; i++) {
-		if(!oneL.equals(null)) {
+		/*if(!oneL.equals(null)) {
 			if(oneL[0]=="cuadrado") {
 				float a= Float.parseFloat(oneL[1]);
 				float b= Float.parseFloat(oneL[2]);
@@ -73,7 +80,7 @@ import processing.core.PApplet;
 				app.rect(b,c,a,a);
 				
 			}
-		}
+		}*/
 		
 			
 	}
