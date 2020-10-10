@@ -2,20 +2,64 @@ package Model;
 
 import processing.core.PApplet;
 
-public class Figure extends PApplet {
+ public class Figure extends PApplet {
 	int posX, posY;
 	int tamX, tamY;
 	int dir;
 	PApplet app;
-	String [] Atributes;
+	String [] atributes;
+	String one,two,three,four,five,six,seven;
 	
-	Figure(int posX, int posY, int tamX, int tamY, int dir, PApplet app){
+	String []oneL;
+	String []twoL;
+	String []threeL;
+	String []fourL;
+	String []fiveL;
+	String []sixL;
+	String []sevenL;
+	
+	
+	
+	
+	
+	public Figure(int posX, int posY, int tamX, int tamY, int dir, PApplet app){
 		this.posX=posX;
 		this.posY=posY;
 		this.tamX=tamX;
 		this.tamY=tamY;
 		this.dir=dir;
+		this.app=app;
+		atributes= app.loadStrings("QuizAtributes.txt");
 	}
+	
+	
+	public void checkArray() { //recorro el txt y guardo cada linea de texto como un string
+		for(int i=0; i< atributes.length; i++) {
+		one=atributes[0];
+		two=atributes[1];
+		three=atributes[2];
+		four=atributes[3];
+		five=atributes[4];
+		six=atributes[5];
+		seven=atributes[6];
+		}
+		
+		oneL= one.split(" ");
+		twoL= two.split(" ");
+		threeL= three.split(" ");
+		fourL= four.split(" ");
+		fiveL= five.split(" ");
+		sixL= six.split(" ");
+		sevenL= seven.split(" ");
+		
+		System.out.println(one);
+		
+		
+		
+		
+		
+	}
+	
 	
 	
 	void move(){
@@ -91,7 +135,7 @@ public class Figure extends PApplet {
 		this.dir = dir;
 	}
 
-
+/*
 	public String[] getAtributes() {
 		return Atributes;
 	}
@@ -99,7 +143,7 @@ public class Figure extends PApplet {
 
 	public void setAtributes(String[] atributes) {
 		Atributes = atributes;
-	}
+	}*/
 	
 	
 	

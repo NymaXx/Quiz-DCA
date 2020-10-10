@@ -9,6 +9,11 @@ public class Circle extends Figure{
 		// TODO Auto-generated constructor stub
 	}
 	
+
+	void paintWithTxt() {
+		
+	}
+	
 	void move(){
 		
 	}
@@ -21,9 +26,7 @@ public class Circle extends Figure{
 		
 	}
 	
-	void paintWithTxt() {
-		
-	}
+	
 	
 	void paintWithClick() {
 		

@@ -9,6 +9,10 @@ public class Square extends Figure{
 		// TODO Auto-generated constructor stub
 	}
 	
+	void paintWithTxt() {
+		
+	}
+	
 	void move(){
 		
 	}
@@ -21,9 +25,7 @@ public class Square extends Figure{
 		
 	}
 	
-	void paintWithTxt() {
-		
-	}
+	
 	
 	void paintWithClick() {
 		
