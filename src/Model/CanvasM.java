@@ -4,10 +4,11 @@ import java.util.ArrayList;
 
 import processing.core.PApplet;
 
-public class CanvasM extends PApplet{
+public class CanvasM {
 	
 	public ArrayList<Square> squares;
 	public ArrayList<Circle> circles;
+	
 	
 	PApplet app;
 	int sizeX, sizeY;
@@ -20,21 +21,22 @@ public class CanvasM extends PApplet{
 		squares = new ArrayList<Square>();
 		circles = new ArrayList<Circle>();
 		
+		
 	}
 	
 	public void create() {
+		if(!squares.equals(null)) {
 		for(int i= squares.size()- 1; i>=0; i--) {
-			Square square = squares.get(i);
-			square.paintWithClick();
-			//square.move();
+			squares.get(i).paintWithClick();
 			//square.bounce();
 		}
+		}
 
+		if(!circles.equals(null)) {
 		for(int e= circles.size()- 1; e>=0; e--) {
-			Circle circle = circles.get(e);
-			circle.paintWithClick();
-			//circle.move();
+			circles.get(e).paintWithClick();
 			//circle.bounce();
+		}
 		}
 		
 		
@@ -42,13 +44,14 @@ public class CanvasM extends PApplet{
 	
 	
 	public void WClick() {
-		int num = (int) app.random(0,3);
+		int num =(int) app.random(0,2);
 		switch(num) {
 		case 0:
-			circles.add(new Circle(app.mouseX, app.mouseY,(int)app.random(30,80),1, app.random(255), app.random(255), app.random(255), this));
+			circles.add(new Circle(app.mouseX, app.mouseY,(int)app.random(30,80),1, app.random(255), app.random(255), app.random(255),app));
+			System.out.println(circles);
 			break;
 		case 1: 
-			squares.add(new Square(app.mouseX, app.mouseY,(int)app.random(30,80),1, app.random(255), app.random(255), app.random(255), this));
+			squares.add(new Square(app.mouseX, app.mouseY,(int)app.random(30,80),1, app.random(255), app.random(255), app.random(255),app));
 			break;
 	}
 	}

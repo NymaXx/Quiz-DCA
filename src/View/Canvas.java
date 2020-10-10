@@ -1,5 +1,6 @@
 package View;
 
+import Model.CanvasM;
 import processing.core.PApplet;
 
 public class Canvas extends PApplet{
@@ -8,6 +9,7 @@ public class Canvas extends PApplet{
 	SquareV squ;
 	CircleV cir;
 	PApplet app;
+	CanvasM canv;
 	
 	Canvas(int sizeX, int sizeY, PApplet app){
 		this.sizeX= sizeX;

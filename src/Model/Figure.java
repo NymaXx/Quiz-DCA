@@ -28,8 +28,11 @@ import processing.core.PApplet;
 		this.posY=posY;
 		this.tam=tam;
 		this.dir=dir;
+		this.r=r;
+		this.g=g;
+		this.b=b;
 		this.app=app;
-		//atributes= app.loadStrings("QuizAtributes.txt");
+		atributes= app.loadStrings("QuizAtributes.txt");
 		
 		
 	}
@@ -60,7 +63,11 @@ import processing.core.PApplet;
 	
 	
 	public void move(){
+		for(int i=0; i< oneL.length; i++) {
+		this.posX= Integer.parseInt(oneL[2]);
+		System.out.println(this.posX);
 		
+		}
 	}
 	
 	void bounce() {

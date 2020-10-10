@@ -37,6 +37,7 @@ public class Square extends Figure{
 	
 	
 	 public void paintWithClick() {
+		 app.rectMode(CENTER);
 		app.fill(this.r,this.g, this.b);
 		app.rect(this.posX, this.posY, this.tam,this.tam);
 		
