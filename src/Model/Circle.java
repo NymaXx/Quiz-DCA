@@ -18,7 +18,7 @@ public class Circle extends Figure{
 	}
 
 	public void paintWithTxt() {
-		
+		super.paintWithTxt();
 	}
 	
 	public void move(){

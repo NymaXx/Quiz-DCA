@@ -8,7 +8,8 @@ public class CanvasM {
 	
 	public ArrayList<Square> squares;
 	public ArrayList<Circle> circles;
-	
+	public Square square;
+	public Circle circle;
 	
 	PApplet app;
 	int sizeX, sizeY;
@@ -20,6 +21,9 @@ public class CanvasM {
 		this.sizeY=sizeY;
 		squares = new ArrayList<Square>();
 		circles = new ArrayList<Circle>();
+		
+		square= new Square(50,50,50,50,50,50,50,app);
+		circle= new Circle(50,50,50,50,50,50,50,app);
 		
 		
 	}
@@ -54,5 +58,12 @@ public class CanvasM {
 			squares.add(new Square(app.mouseX, app.mouseY,(int)app.random(30,80),1, app.random(255), app.random(255), app.random(255),app));
 			break;
 	}
+	}
+	
+	public void WTxt() {
+		square.checkArray();
+		circle.checkArray();
+		square.paintWithTxt();
+		circle.paintWithTxt();
 	}
 }

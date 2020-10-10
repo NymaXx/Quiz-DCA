@@ -65,7 +65,9 @@ import processing.core.PApplet;
 		
 	
 	
-	public void paintWithTxt() {
+	public void paintWithTxt() { //metodo para recorrer los arreglos creados a partir de las lineas del archivo TXT
+		//recorre individualmente cada linea con un for individual y pinta la figura correspondiente
+		
 		
 		for(int e=0; e<oneL.length; e++) {
 			System.out.println(oneL[0]);

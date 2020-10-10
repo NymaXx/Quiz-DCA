@@ -20,7 +20,7 @@ public class Canvas extends PApplet{
 	}
 	
 	void txtPaint() {
-		
+		canv.WTxt();
 	}
 	
 	void basicPaint() {
