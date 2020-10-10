@@ -24,7 +24,7 @@ public class CanvasM {
 		
 	}
 	
-	public void create() {
+	public void createClicks() {
 		if(!squares.equals(null)) {
 		for(int i= squares.size()- 1; i>=0; i--) {
 			squares.get(i).paintWithClick();

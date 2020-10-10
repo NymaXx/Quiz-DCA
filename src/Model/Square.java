@@ -18,7 +18,6 @@ public class Square extends Figure{
 	}
 	
 	public void paintWithTxt() {
-		//app.ellipse(50,50,50,50);
 		super.paintWithTxt();
 	}
 	

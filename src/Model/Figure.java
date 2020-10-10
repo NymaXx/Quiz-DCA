@@ -8,7 +8,7 @@ import processing.core.PApplet;
 	int dir;
 	float r,g,b;
 	PApplet app;
-	static String [] atributes;
+	String [] atributes;
 	String one,two,three,four,five,six,seven;
 	
 	String []oneL;
@@ -56,18 +56,32 @@ import processing.core.PApplet;
 		sixL= six.split(" ");
 		sevenL= seven.split(" ");
 		
+	}
 		}
 		
+		
+		
+	
+	
+	public void paintWithTxt() {
+		//for(int i=0; i< oneL.length; i++) {
+		if(!oneL.equals(null)) {
+			if(oneL[0]=="cuadrado") {
+				float a= Float.parseFloat(oneL[1]);
+				float b= Float.parseFloat(oneL[2]);
+				float c= Float.parseFloat(oneL[3]);
+				app.rect(b,c,a,a);
+				
+			}
+		}
+		
+			
 	}
 	
-	
-	
 	public void move(){
-		for(int i=0; i< oneL.length; i++) {
-		this.posX= Integer.parseInt(oneL[2]);
-		System.out.println(this.posX);
 		
-		}
+		
+		
 	}
 	
 	void bounce() {
@@ -80,24 +94,9 @@ import processing.core.PApplet;
 		}
 	}
 	
-	void paintWithTxt() {
-		System.out.println();
-		/*String s= "cuadrado";
 		
-		
-			if(oneL[0]==s) {
-				float x=Float.parseFloat(oneL[2]);
-				float y=Float.parseFloat(oneL[3]);
-				float w=Float.parseFloat(oneL[1]);
-				app.rect( x , y, w,w);
-			}*/
-		
-		//app.rect(50, 50, 50, 50);
-		
-	}
-	
 	void paintWithClick() {
-		
+	//Sobreescrito en cada clase HIJA	
 	}
 
 

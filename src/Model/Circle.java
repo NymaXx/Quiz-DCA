@@ -17,7 +17,7 @@ public class Circle extends Figure{
 		super.checkArray();
 	}
 
-	void paintWithTxt() {
+	public void paintWithTxt() {
 		
 	}
 	

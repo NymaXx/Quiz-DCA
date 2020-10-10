@@ -15,15 +15,20 @@ public class Canvas extends PApplet{
 		this.sizeX= sizeX;
 		this.sizeY=sizeY;
 		this.app=app;
+		canv= new CanvasM(500,500,app);
+		
+	}
+	
+	void txtPaint() {
 		
 	}
 	
 	void basicPaint() {
-		
+		canv.createClicks();
 	}
 	
 	void paintWClick() {
-		
+		canv.WClick();
 	}
 	
 	
