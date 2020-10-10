@@ -6,8 +6,7 @@ import processing.core.PApplet;
 public class Canvas extends PApplet{
 
 	int sizeX, sizeY;
-	SquareV squ;
-	CircleV cir;
+	
 	PApplet app;
 	CanvasM canv;
 	

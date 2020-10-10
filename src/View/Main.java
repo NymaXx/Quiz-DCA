@@ -5,6 +5,7 @@ import processing.core.PApplet;
 public class Main extends PApplet {
 	
 	Canvas canvas;
+	//para ensayos directos
 	Figure fig;
 
 
@@ -29,8 +30,6 @@ public class Main extends PApplet {
 	public void draw() {
 		background(0);
 		canvas.basicPaint();
-		//fig.checkArray();
-        //fig.paintWithTxt();
         canvas.txtPaint();
 		
 		
