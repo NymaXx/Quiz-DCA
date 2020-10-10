@@ -7,7 +7,7 @@ import processing.core.PApplet;
 	int tamX, tamY;
 	int dir;
 	PApplet app;
-	String [] atributes;
+	static String [] atributes;
 	String one,two,three,four,five,six,seven;
 	
 	String []oneL;
@@ -30,6 +30,7 @@ import processing.core.PApplet;
 		this.dir=dir;
 		this.app=app;
 		atributes= app.loadStrings("QuizAtributes.txt");
+		
 	}
 	
 	
@@ -51,13 +52,6 @@ import processing.core.PApplet;
 		fiveL= five.split(" ");
 		sixL= six.split(" ");
 		sevenL= seven.split(" ");
-		
-		System.out.println(one);
-		
-		
-		
-		
-		
 	}
 	
 	

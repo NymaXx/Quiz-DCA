@@ -4,9 +4,17 @@ import processing.core.PApplet;
 
 public class Square extends Figure{
 
-	Square(int posX, int posY, int tamX, int tamY, int dir, PApplet app) {
+	
+	public Square(int posX, int posY, int tamX, int tamY, int dir, PApplet app) {
 		super(posX, posY, tamX, tamY, dir, app);
+		
+		
 		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public void checkArray() {
+		super.checkArray();
 	}
 	
 	void paintWithTxt() {

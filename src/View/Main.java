@@ -1,12 +1,14 @@
 package View;
 
 import Model.Figure;
+import Model.Square;
 import processing.core.PApplet;
 
 public class Main extends PApplet {
 	
 	Canvas canvas;
 	Figure fig;
+	Square squ;
 	
 
 	public static void main(String[] args) {
@@ -25,7 +27,9 @@ public class Main extends PApplet {
 	public void setup() {
 		canvas = new Canvas(500,500,this);
 		fig= new Figure(50,50,50,50,50,this);
-		fig.checkArray();
+		squ= new Square(50,50,50,50,50,this);
+		//fig.checkArray();
+		squ.checkArray();
 		
 		
 	}
