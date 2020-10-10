@@ -69,18 +69,81 @@ import processing.core.PApplet;
 		
 		for(int e=0; e<oneL.length; e++) {
 			System.out.println(oneL[0]);
-			//if(oneL[0])
-		}
-		//for(int i=0; i< oneL.length; i++) {
-		/*if(!oneL.equals(null)) {
-			if(oneL[0]=="cuadrado") {
+			if(oneL[0].equals("cuadrado")==true) {
 				float a= Float.parseFloat(oneL[1]);
 				float b= Float.parseFloat(oneL[2]);
 				float c= Float.parseFloat(oneL[3]);
-				app.rect(b,c,a,a);
+				app.rect(b,c,a,a);;
 				
 			}
-		}*/
+		}
+		
+		for(int e=0; e<oneL.length; e++) {
+			System.out.println(twoL[0]);
+			if(twoL[0].equals("circulo")==true) {
+				float a= Float.parseFloat(twoL[1]);
+				float b= Float.parseFloat(twoL[2]);
+				float c= Float.parseFloat(twoL[3]);
+				app.ellipse(b,c,a,a);;
+				
+			}
+		}
+		
+		for(int e=0; e<threeL.length; e++) {
+			System.out.println(threeL[0]);
+			if(threeL[0].equals("cuadrado")==true) {
+				float a= Float.parseFloat(threeL[1]);
+				float b= Float.parseFloat(threeL[2]);
+				float c= Float.parseFloat(threeL[3]);
+				app.rect(b,c,a,a);;
+				
+			}
+		}
+		
+		for(int e=0; e<fourL.length; e++) {
+			System.out.println(oneL[0]);
+			if(fourL[0].equals("circulo")==true) {
+				float a= Float.parseFloat(fourL[1]);
+				float b= Float.parseFloat(fourL[2]);
+				float c= Float.parseFloat(fourL[3]);
+				app.ellipse(b,c,a,a);;
+				
+			}
+		}
+		
+		for(int e=0; e<fiveL.length; e++) {
+			System.out.println(oneL[0]);
+			if(fiveL[0].equals("circulo")==true) {
+				float a= Float.parseFloat(fiveL[1]);
+				float b= Float.parseFloat(fiveL[2]);
+				float c= Float.parseFloat(fiveL[3]);
+				app.ellipse(b,c,a,a);;
+				
+			}
+		}
+		
+		for(int e=0; e<sixL.length; e++) {
+			System.out.println(sixL[0]);
+			if(sixL[0].equals("cuadrado")==true) {
+				float a= Float.parseFloat(sixL[1]);
+				float b= Float.parseFloat(sixL[2]);
+				float c= Float.parseFloat(sixL[3]);
+				app.rect(b,c,a,a);;
+				
+			}
+		}
+		
+		for(int e=0; e<sevenL.length; e++) {
+			System.out.println(sevenL[0]);
+			if(oneL[0].equals("cuadrado")==true) {
+				float a= Float.parseFloat(sevenL[1]);
+				float b= Float.parseFloat(sevenL[2]);
+				float c= Float.parseFloat(sevenL[3]);
+				app.rect(b,c,a,a);;
+				
+			}
+		}
+		
 		
 			
 	}
